@@ -9,7 +9,7 @@ import videoSrc from './assets/homepage Video.mp4';
 function App() {
   const [count, setCount] = useState(0)
   const Video=()=>(
-    <div className="video">
+    <div id='vid' className="video">
     <video muted autoPlay loop>
     <source src={videoSrc} type="video/mp4" />
   </video>
