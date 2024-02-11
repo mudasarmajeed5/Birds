@@ -5,7 +5,6 @@ const Navbar = () => {
   useEffect(() => {
     function dropdown() {
       let navdrop = document.getElementById("btn1");
-      // navdrop =  document.style.display="none";
       navdrop.style.display = "none";
       let navcatch = document.getElementById("btn2");
       navdrop.addEventListener("click", function () {
@@ -13,14 +12,12 @@ const Navbar = () => {
           navdrop.style.display = "none";
         }
         navcatch.style.display = "block";
-        console.log("workng")
       });
       navcatch.addEventListener("click", function () {
         if (navcatch.style.display != "none") {
           navcatch.style.display = "none";
         }
         navdrop.style.display = "block";
-        console.log("workang")
       });
 
       let x = document.getElementById("vid")
@@ -30,8 +27,6 @@ const Navbar = () => {
           navdrop.style.display = "none";
         }
       })
-      console.log(x)
-
     }
 
     dropdown();
