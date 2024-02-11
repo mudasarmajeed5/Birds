@@ -66,10 +66,14 @@ const Navbar = () => {
           <a className="mr-5 smooth-underline-transition transition-all cursor-pointer">Campaigns</a>
         </nav>
         <div className="flex gap-1 md:gap-2 items-center">
-          {/* Get Quote Button */}
+          <div className="quote">
+            {/* Get Quote Button */}
           <QuoteButton/>
+          </div>
+          <div className="menu">
           {/* Drop Down Menu */}
           <DropDownMenu/>
+          </div>
         </div>
       </div>
     </header>
