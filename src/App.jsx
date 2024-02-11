@@ -8,20 +8,21 @@ import videoSrc from './assets/homepage Video.mp4';
 
 function App() {
   const [count, setCount] = useState(0)
+  const Video=()=>(
+    <div className="video">
+    <video muted autoPlay loop>
+    <source src={videoSrc} type="video/mp4" />
+  </video>
+  </div>
+  )
   useEffect(() => {
     console.log('Use effect');
   }, [])
   return (
     <>
       <div className="FirstPage">
-
-        <div className="video">
-          <video muted autoPlay loop>
-          <source src={videoSrc} type="video/mp4" />
-        </video>
-        </div>
+        <Video/>
         <Navbar />
-
       </div>
 
     </>

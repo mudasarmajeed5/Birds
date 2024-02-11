@@ -4,6 +4,7 @@ import "./Navbar.css"
 const Navbar = () => {
   const DropDownMenu = () => (
     <div className="md:hidden">
+     
       <div className="dropdown">
         <a
           className="btn btn-secondary dropdown-toggle"
@@ -12,37 +13,10 @@ const Navbar = () => {
           data-bs-toggle="dropdown"
           aria-expanded="false"
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-          >
-            <path
-              d="M4 5L20 5"
-              stroke="white"
-              strokeWidth="1.5"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-            <path
-              d="M4 12L20 12"
-              stroke="white"
-              strokeWidth="1.5"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-            <path
-              d="M4 19L20 19"
-              stroke="white"
-              strokeWidth="1.5"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-          </svg>
+         {/* open and close menu svg here! */}
+         OpenClose
         </a>
-        <ul className="dropdown-menu">
+        <ul className="dropdown-menu mt-3 w-[100vw] ">
           <li>
             <a className="dropdown-item" href="#">
               Billboards
@@ -92,10 +66,10 @@ const Navbar = () => {
           <a className="mr-5 smooth-underline-transition transition-all cursor-pointer">Campaigns</a>
         </nav>
         <div className="flex gap-1 md:gap-2 items-center">
-          {/* Drop Down Menu */}
-          <DropDownMenu/>
           {/* Get Quote Button */}
           <QuoteButton/>
+          {/* Drop Down Menu */}
+          <DropDownMenu/>
         </div>
       </div>
     </header>
