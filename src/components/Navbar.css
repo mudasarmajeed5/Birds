@@ -1,3 +1,66 @@
+/* Start of Mobiler responsive Navigation */
+
+a {
+    color: white;
+}
+
+
+
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    height: 0;
+    background-color: transparent;
+    position: fixed;
+    left: 0;    
+    margin-top: 30px;
+    width: 100%;
+    animation: slideDown 0.5s ease forwards;
+    
+}
+.m_navbar>ul{
+    
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.menu.show {
+    animation: slideUp 200ms ease forwards;
+}
+.m_navbar>ul>li>a{
+    color: white;
+    
+}
+.m_navbar>ul>li{
+    margin: 10px;
+}
+
+
+
+@keyframes slideDown {
+    from {
+        height: 0;
+    }
+
+    to {
+        height: 10rem;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        height: 10rem;
+    }
+
+    to {
+        height: 0;
+    }
+}
+
+/* End of Mobile responsive Navigation */
+
+
 .smooth-underline-transition {
     position: relative;
     text-decoration: none;
@@ -33,27 +96,23 @@
     background-color: transparent;
     border: none;
 }
-.nav-logo{
+
+.nav-logo {
     width: 100px;
 }
 
-.glassglass{
+.glassglass {
     backdrop-filter: blur(5px);
-    background-color: rgba(0, 0, 0,0.3);
+    background-color: rgba(0, 0, 0, 0.3);
 }
-.dropdown-menu li{
-    border-bottom: 1px solid;
-    margin: 10px 20px;
-}
-.dropdown-menu{
-    padding: 0;
-}
+
 @media only screen and (max-width:767px) {
 
     .nav-pad {
         padding: 0.5rem;
     }
 }
+
 @media only screen and (min-width:1100px) {
 
     .nav-pad {
@@ -62,11 +121,6 @@
 }
 
 @media only screen and (min-width:1400px) {
-
-    /* .nav-pad {
-        padding: 1rem;
-    } */
-
     .nav-logo {
         width: 150px;
     }
