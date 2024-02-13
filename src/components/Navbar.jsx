@@ -2,7 +2,7 @@ import React,{useState} from 'react'
 import "./Navbar.css"
 import Menu from "../assets/menu-01.svg"
 import Close from "../assets/cancel-01.svg"
-import logo from "../../public/Logo-Analysis.svg"
+import logo from "/Logo-Analysis.svg"
 
 const Navbar = () => {
   const [Toggle,setToggle] = useState(true);
