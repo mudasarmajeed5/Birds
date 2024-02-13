@@ -5,7 +5,9 @@ a {
 }
 
 
-
+.m_navbar ul{
+    overflow: auto;
+}
 
 .menu {
     list-style: none;
@@ -44,13 +46,13 @@ a {
     }
 
     to {
-        height: 10rem;
+        height: 11rem;
     }
 }
 
 @keyframes slideUp {
     from {
-        height: 10rem;
+        height: 11rem;
     }
 
     to {

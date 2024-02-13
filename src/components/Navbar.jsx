@@ -11,12 +11,13 @@ const Navbar = () => {
   const M_Navbar = () => {
     return (
       <div className="m_navbar">
-        <img onClick={showMenu} className="block md:hidden" src={Toggle?Menu:Close}></img>
+        <img onClick={showMenu} className="block md:hidden mr-2" src={Toggle?Menu:Close}></img>
         <ul className={Toggle ? 'menu show' : 'menu'}>
           <li><a className='smooth-underline-transition' href="#">Home</a></li>
-          <li><a className='smooth-underline-transition' href="#">TVC's</a></li>
-          <li><a className='smooth-underline-transition' href="#">Print Media</a></li>
-          <li><a className='smooth-underline-transition' href="#">Campaigns</a></li>
+          <li><a className='smooth-underline-transition' href="#">Services</a></li>
+          <li><a className='smooth-underline-transition' href="#">About</a></li>
+          <li><a className='smooth-underline-transition' href="#">Blog</a></li>
+          <li><a className='smooth-underline-transition' href="#">Contact</a></li>
         </ul>
       </div>
     );
@@ -45,10 +46,11 @@ const Navbar = () => {
           <img className='nav-logo' src="https://colorstudiomax.com/wp-content/uploads/2023/10/color-white-e1698328086113.png" alt="" />
         </a>
         <nav className="md:ml-auto md:mr-auto flex-wrap items-center text-base justify-center hidden md:flex text-white">
-          <a className="mr-5 smooth-underline-transition transition-all cursor-pointer">BillBoards</a>
-          <a className="mr-5 smooth-underline-transition transition-all cursor-pointer">TVC's</a>
-          <a className="mr-5 smooth-underline-transition transition-all cursor-pointer">Print Media</a>
-          <a className="mr-5 smooth-underline-transition transition-all cursor-pointer">Campaigns</a>
+          <a className="mr-5 smooth-underline-transition transition-all cursor-pointer">Home</a>
+          <a className="mr-5 smooth-underline-transition transition-all cursor-pointer">Services</a>
+          <a className="mr-5 smooth-underline-transition transition-all cursor-pointer">About</a>
+          <a className="mr-5 smooth-underline-transition transition-all cursor-pointer">Blog</a>
+          <a className="mr-5 smooth-underline-transition transition-all cursor-pointer">Contact</a>
         </nav>
         <div className="flex gap-1 md:gap-2 items-center">
 
