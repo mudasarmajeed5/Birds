@@ -2,6 +2,7 @@ import React,{useState} from 'react'
 import "./Navbar.css"
 import Menu from "../assets/menu-01.svg"
 import Close from "../assets/cancel-01.svg"
+import logo from "../../public/Logo-Analysis.svg"
 
 const Navbar = () => {
   const [Toggle,setToggle] = useState(true);
@@ -43,7 +44,7 @@ const Navbar = () => {
     <header className="text-gray-600 body-font glassglass sticky top-0">
       <div className="container mx-auto flex flex-wrap  md:flex-row md:items-center justify-between items-center nav-pad">
         <a className=" flex title-font font-medium items-center text-gray-900 mb-0 md:mb-0">
-          <img className='nav-logo' src="https://www.mintformations.co.uk/blog/wp-content/uploads/2020/05/shutterstock_583717939.jpg" alt="" />
+          <img className='nav-logo' src={logo} alt="" />
         </a>
         <nav className="md:ml-auto md:mr-auto flex-wrap items-center text-base justify-center hidden md:flex text-white">
           <a className="mr-5 smooth-underline-transition transition-all cursor-pointer">Home</a>

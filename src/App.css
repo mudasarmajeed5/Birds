@@ -16,6 +16,12 @@
 .sliding-text {
     animation: slideFromBottom 2s forwards;
 }
-.animate-bounce{
-    animation-delay: 7s !important;
+
+.animate-bounce {
+    animation-delay: 6s !important;
+}
+
+#content_types {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
 }
