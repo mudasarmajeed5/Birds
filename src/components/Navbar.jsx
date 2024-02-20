@@ -11,7 +11,7 @@ const Navbar = () => {
   }
   const M_Navbar = () => {
     return (
-      <div className="m_navbar">
+      <nav className="m_navbar">
         <img onClick={showMenu} className="block md:hidden mr-2" src={Toggle?Menu:Close}></img>
         <ul className={Toggle ? 'menu show' : 'menu'}>
           <li><a className='smooth-underline-transition' href="#">Home</a></li>
@@ -20,7 +20,7 @@ const Navbar = () => {
           <li><a className='smooth-underline-transition' href="#">Blog</a></li>
           <li><a className='smooth-underline-transition' href="#">Contact</a></li>
         </ul>
-      </div>
+      </nav>
     );
   };
 

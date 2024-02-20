@@ -2,26 +2,57 @@
 @tailwind components;
 @tailwind utilities;
 
-
-/* Scrollbar for GPT */
-
-::-webkit-scrollbar {
-    width: 10px;
+:root{
+    --primary:red;
+    --secondary:green;
+    --third:blue;
 }
 
+body{
+    font-family: sans-serif;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
+.FirstPage {
+    object-fit: cover;
+    object-position: center;
+    height: 100vh;
+    overflow: hidden;
+}
+    
+/* Scrollbar from GPT */
+::-webkit-scrollbar{
+    width: 8px;
+}
+::-webkit-scrollbar-track{
+    background-color: rgb(44, 44, 44);
+}
 ::-webkit-scrollbar-thumb {
-    background-color: red;
-    border-radius: 2px;
-}
-
-
-::-webkit-scrollbar-track {
-    background: white;
+    background-color: rgb(228, 228, 0);
+    border-radius: 10px;
 }
 
 @media only screen and (max-width:787px) {
     ::-webkit-scrollbar {
         width: 3px;
     }
+
+    ::-webkit-scrollbar-track {
+        background: white;
+    }
+
+    ::-webkit-scrollbar {
+        width: 5px;
+    }
+
+
+    ::-webkit-scrollbar-thumb {
+        background-color: yellow;
+        border-radius: 10px;
+    }
+
 }
