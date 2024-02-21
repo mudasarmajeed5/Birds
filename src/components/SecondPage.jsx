@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
 import "./SecondPage.css"
-import { MdHistoryEdu, MdOutlineShowChart } from "react-icons/md";
+import { MdHistoryEdu, MdOutlineShowChart,MdComputer } from "react-icons/md";
 import { FaPeopleCarry, FaChartBar } from "react-icons/fa";
 import { SiAntdesign } from "react-icons/si";
+import { FcAdvertising } from "react-icons/fc";
 import { FaRegNewspaper, FaFilePen } from "react-icons/fa6";
 
 const SecondPage = () => {
@@ -10,7 +11,7 @@ const SecondPage = () => {
     const createCards = () => {
         setseemore(!seemore);
         document.getElementById("seemore").innerHTML = seemore ? "Show More" : "Show Less";
-        document.getElementById("seemore").style.opacity = seemore ? 1 : 0;
+        document.getElementById("seemore").style.display = seemore ? "block" : "none";
     }
 
     return (
@@ -73,13 +74,13 @@ const SecondPage = () => {
                         <div className="seeDetails"><a href="#creativeAgency">See Details</a></div>
                     </div>
                     <div className="border-left card card2 justify-center gap-4 items-center flex flex-col">
-                        <div className="text-6xl serviceLogo"><SiAntdesign /></div>
+                        <div className="text-6xl serviceLogo"><MdComputer /></div>
                         <div className="serviceTitle text-xl md:text-2xl font-bold">Airing</div>
                         <div className="serviceDesc text-center">We craft compelling TV ads and secure airtime for maximum reach, making your brand memorable on television.</div>
                         <div className="seeDetails"><a href="#creativeAgency">See Details</a></div>
                     </div>
                     <div className="border-left card card3 justify-center gap-4 items-center flex flex-col">
-                        <div className="text-6xl serviceLogo"><FaRegNewspaper /></div>
+                        <div className="text-6xl serviceLogo"><FcAdvertising /></div>
                         <div className="serviceTitle text-xl md:text-2xl font-bold">Outdoor Advertising</div>
                         <div className="serviceDesc text-center">Our outdoor advertising captures attention with strategically placed billboards and digital screens.</div>
                         <div className="seeDetails"><a href="#creativeAgency">See Details</a></div>
