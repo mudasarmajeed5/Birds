@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 body{
-  background-image: url(/src/assets/background\ Image.png);
+  background-image: url(bodyImage.png);
 }
 :root{
   --spancolor:rgb(280,280, 0);

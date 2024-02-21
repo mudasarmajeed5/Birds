@@ -4,7 +4,7 @@ import Navbar from "./components/Navbar"
 import TextAnimation from "./components/TextAnimation"
 import './App.css'
 import "./Global.css"
-import Imgsrc from './assets/background Image.png';
+import Imgsrc from './bodyImage.png';
 import SecondPage from "./components/SecondPage"
 function App() {
 
