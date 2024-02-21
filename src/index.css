@@ -2,11 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-:root{
-    --primary:red;
-    --secondary:green;
-    --third:blue;
-}
+
+
 
 body{
     font-family: sans-serif;
@@ -20,8 +17,9 @@ body{
 .FirstPage {
     object-fit: cover;
     object-position: center;
-    height: 100vh;
+    height: 80vh;
     overflow: hidden;
+    position: relative;
 }
     
 /* Scrollbar from GPT */

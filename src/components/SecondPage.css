@@ -1,0 +1,75 @@
+#creatingExperiences{
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    color: var(--text-color);
+}
+#creatingExperiences span{
+    color: var(--spancolor);
+}
+.secondPage{
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+.spancolor{
+    color: var(--spancolor);
+}
+.secondPage_cards{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 90%;
+    padding: 20px;
+    margin: 0 auto;
+    gap: 15px;
+}
+.card{
+    margin: 20px 0px;
+    width: 350px;
+    height: 400px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    border-radius: 0px;
+    border-right: 2px solid gray;
+    border-bottom: 2px solid gray;
+    padding: 0px 20px;
+}
+.card>.seeDetails{
+    color: var(--text-button-color);
+    font-family: 'Poppins',sans-serif;
+}
+.border-left{
+    border-left: 2px solid;
+    border-right: none;
+    border-top: 2px solid gray;
+    border-bottom: none;
+}
+.card{
+    transition: all 150ms ease-in;
+}
+.card:hover{
+    color: black;
+    background-color: rgb(250, 225, 0);
+   
+}
+.card:hover .seeDetails {
+    color: red;
+}
+.seeDetails{
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+.seeDetails:hover{
+    background-color: var(--text-button-color);
+}
+.card:hover .seeDetails:hover {
+    color: black;
+}
+.card:hover .serviceLogo svg path {
+    stroke: var(--text-button-color);
+}
+
+
+@media only screen and (min-width:800px){
+   
+}

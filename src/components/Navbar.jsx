@@ -41,7 +41,7 @@ const Navbar = () => {
   </button>
   );
   return (
-    <header className="text-gray-600 body-font glassglass sticky top-0">
+    <header className="text-gray-600 body-font glassglass z-50 sticky top-0 bg-transparent">
       <div className="container mx-auto flex flex-wrap  md:flex-row md:items-center justify-between items-center nav-pad">
         <a className=" flex title-font font-medium items-center text-gray-900 mb-0 md:mb-0">
           <img className='nav-logo' src={logo} alt="" />

@@ -128,3 +128,20 @@ a {
     }
 
 }
+
+
+/* Front LANDING PAGE CSS */
+.lets_talk{
+    color: white;
+}
+.lets_talk span{
+    color: rgb(288,288,0);
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 5px 10px;
+}
+.lets_talk span:hover{
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
