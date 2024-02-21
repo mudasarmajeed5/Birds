@@ -26,8 +26,8 @@ function App() {
   const ToggleDarkMode = (e) => {
     document.body.classList.toggle("l_theme")
     const darkMode = document.getElementById("dark-mode");
-    darkMode.classList.toggle("bg-red");
     darkMode.classList.toggle("bg-white");
+    darkMode.classList.toggle("bg-black");
   }
 
 

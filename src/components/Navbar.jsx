@@ -52,12 +52,12 @@ const Navbar = () => {
   );
   return (
 
-    <header className="text-gray-600 body-font glassglass z-50 sticky top-0 bg-transparent">
+    <header className="text-gray-600 body-font glassglass z-50 sticky top-0 ">
       <div className="container mx-auto flex flex-wrap  md:flex-row md:items-center justify-between items-center nav-pad">
         <a className=" flex title-font font-medium items-center text-gray-900 mb-0 md:mb-0">
           <img className='nav-logo' src={logo} alt="" />
         </a>
-        <nav className="md:ml-auto md:mr-auto flex-wrap items-center text-base justify-center hidden md:flex text-white">
+        <nav className="md:ml-auto md:mr-auto flex-wrap items-center text-base justify-center hidden md:flex toggleNavColor">
           <a href='#home' onClick={scrollToTop} className="mr-5 smooth-underline-transition transition-all cursor-pointer">Home</a>
           <a href='#explore' className="mr-5 smooth-underline-transition transition-all cursor-pointer">Services</a>
           <a className="mr-5 smooth-underline-transition transition-all cursor-pointer">About</a>

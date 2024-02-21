@@ -75,11 +75,13 @@
     stroke: var(--text-button-color);
 }
 #seemore{
-    background-color: var(--text-button-color);
-    color: black;
+    transition: all 0.2s ease;
+    background-color: red;
+    color: white;
     border-radius: 5px;
     padding: 6px 20px;
     font-weight: bold;
+    margin-bottom: 10px;
 }
 #seemore:hover{
     background-color: yellow;
