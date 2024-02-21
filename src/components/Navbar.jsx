@@ -15,7 +15,7 @@ const Navbar = () => {
         <img onClick={showMenu} className="block md:hidden mr-2" src={Toggle?Menu:Close}></img>
         <ul className={Toggle ? 'menu show' : 'menu'}>
           <li><a className='smooth-underline-transition' href="#">Home</a></li>
-          <li><a className='smooth-underline-transition' href="#">Services</a></li>
+          <li><a className='smooth-underline-transition' href="#explore">Services</a></li>
           <li><a className='smooth-underline-transition' href="#">About</a></li>
           <li><a className='smooth-underline-transition' href="#">Blog</a></li>
           <li><a className='smooth-underline-transition' href="#">Contact</a></li>
@@ -48,7 +48,7 @@ const Navbar = () => {
         </a>
         <nav className="md:ml-auto md:mr-auto flex-wrap items-center text-base justify-center hidden md:flex text-white">
           <a className="mr-5 smooth-underline-transition transition-all cursor-pointer">Home</a>
-          <a className="mr-5 smooth-underline-transition transition-all cursor-pointer">Services</a>
+          <a href='#explore' className="mr-5 smooth-underline-transition transition-all cursor-pointer">Services</a>
           <a className="mr-5 smooth-underline-transition transition-all cursor-pointer">About</a>
           <a className="mr-5 smooth-underline-transition transition-all cursor-pointer">Blog</a>
           <a className="mr-5 smooth-underline-transition transition-all cursor-pointer">Contact</a>

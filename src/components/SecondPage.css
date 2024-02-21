@@ -68,7 +68,17 @@
 .card:hover .serviceLogo svg path {
     stroke: var(--text-button-color);
 }
-
+#seemore{
+    background-color: var(--text-button-color);
+    color: black;
+    border-radius: 5px;
+    padding: 6px 20px;
+    font-weight: bold;
+}
+#seemore:hover{
+    background-color: yellow;
+    color: black;
+}
 
 @media only screen and (min-width:800px){
    
