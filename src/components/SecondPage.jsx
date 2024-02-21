@@ -47,19 +47,19 @@ const SecondPage = () => {
 
             <div className="justify-center flex items-center"><button onClick={createCards} id="seemore">Show More</button></div>
             {seemore && <div> <div className="secondPage_cards flex flex-wrap">
-                <div className="border-left card card1 justify-center gap-4 items-center flex flex-col">
+                <div className="border-left card card4 justify-center gap-4 items-center flex flex-col">
                     <div className="text-6xl serviceLogo"><MdOutlineShowChart /></div>
                     <div className="serviceTitle text-xl md:text-2xl font-bold">Digital Marketing</div>
                     <div className="serviceDesc text-center">We leverage SEO, social media, and online ads to engage your digital audience with data-driven strategies. </div>
                     <div className="seeDetails"><a href="#creativeAgency">See Details</a></div>
                 </div>
-                <div className="border-left card card2 justify-center gap-4 items-center flex flex-col">
+                <div className="border-left card card5 justify-center gap-4 items-center flex flex-col">
                     <div className="text-6xl serviceLogo"><SiAntdesign /></div>
                     <div className="serviceTitle text-xl md:text-2xl font-bold">Interior Designing</div>
                     <div className="serviceDesc text-center">Our interior design services encompass expert space planning and functional layouts to transform your environment</div>
                     <div className="seeDetails"><a href="#creativeAgency">See Details</a></div>
                 </div>
-                <div  className="border-left card card3 justify-center gap-4 items-center flex flex-col">
+                <div  className="border-left card card6 justify-center gap-4 items-center flex flex-col">
                     <div className="text-6xl serviceLogo"><FaRegNewspaper /></div>
                     <div className="serviceTitle text-xl md:text-2xl font-bold">Branding</div>
                     <div className="serviceDesc text-center">Our branding services encompass comprehensive solutions to enhance your brand's identity and visibility</div>
@@ -67,19 +67,19 @@ const SecondPage = () => {
                 </div>
             </div>
                 <div className="secondPage_cards flex flex-wrap">
-                    <div className="border-left card card1 justify-center gap-4 items-center flex flex-col">
+                    <div className="border-left card card7 justify-center gap-4 items-center flex flex-col">
                         <div className="text-6xl serviceLogo"><FaFilePen /></div>
                         <div className="serviceTitle text-xl md:text-2xl font-bold">Print Media</div>
                         <div className="serviceDesc text-center">Print media include news reporting, feature articles, advertising,  promotional materials,  newspapers and more.</div>
                         <div className="seeDetails"><a href="#creativeAgency">See Details</a></div>
                     </div>
-                    <div className="border-left card card2 justify-center gap-4 items-center flex flex-col">
+                    <div className="border-left card card8 justify-center gap-4 items-center flex flex-col">
                         <div className="text-6xl serviceLogo"><MdComputer /></div>
                         <div className="serviceTitle text-xl md:text-2xl font-bold">Airing</div>
                         <div className="serviceDesc text-center">We craft compelling TV ads and secure airtime for maximum reach, making your brand memorable on television.</div>
                         <div className="seeDetails"><a href="#creativeAgency">See Details</a></div>
                     </div>
-                    <div className="border-left card card3 justify-center gap-4 items-center flex flex-col">
+                    <div className="border-left card card9 justify-center gap-4 items-center flex flex-col">
                         <div className="text-6xl serviceLogo"><FcAdvertising /></div>
                         <div className="serviceTitle text-xl md:text-2xl font-bold">Outdoor Advertising</div>
                         <div className="serviceDesc text-center">Our outdoor advertising captures attention with strategically placed billboards and digital screens.</div>

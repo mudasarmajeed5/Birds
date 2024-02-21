@@ -13,11 +13,19 @@ body{
   --background-color:black;
   --text-button-color:rgb(1, 225, 255);
   --svg-color:white;
+
+  --card13-purple: #9b59b6;
+  --card56-yellow: #f1c40f;
+  --card79-blue: #0c9dfd;
 }
-.LightMode{
+.l_theme{
   --spancolor:red;
   --text-color:black;
   --background-color:white;
   --text-button-color:rgb(280,280, 0)
   --svg-color:red;
+
+  --card13-purple: #ff7b00;
+  --card56-yellow: #f1948a; 
+  --card79-blue: rgb(0, 255, 55);
 }
