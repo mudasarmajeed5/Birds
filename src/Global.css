@@ -6,7 +6,6 @@
 }
 body{
   background-image: url(/src/assets/background\ Image.png);
-  background-color: black;
 }
 :root{
   --spancolor:rgb(280,280, 0);
