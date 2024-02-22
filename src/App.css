@@ -25,3 +25,9 @@
     opacity: 1;
     transition: opacity 0.5s ease-in-out;
 }
+
+.scrollText{
+    color: transparent;
+    -webkit-text-stroke: 1px aqua;
+
+}
