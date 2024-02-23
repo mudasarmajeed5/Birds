@@ -52,8 +52,16 @@
     font-family: 'Poppins',sans-serif;
     background-color: red;
 }
+.ThirdPage{
+    height: 500px;
+}
 @media only screen and (max-width:800px){
     .ThirdPage{
         grid-template-columns: 1fr;
+        height: auto;
     }
+    .rightside{   
+        overflow: hidden !important; 
+    }
+    
 }
