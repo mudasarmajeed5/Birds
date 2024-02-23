@@ -24,7 +24,7 @@ const Navbar = () => {
       <nav className="m_navbar">
         <img onClick={showMenu} className="block md:hidden mr-2" src={Toggle ? Menu : Close}></img>
         <ul className={Toggle ? 'menu show' : 'menu'}>
-          <li><a className='smooth-underline-transition' href="#home">Home</a></li>
+          <li><a onClick={scrollToTop} className='smooth-underline-transition' href="#home">Home</a></li>
           <li><a className='smooth-underline-transition' href="#explore">Services</a></li>
           <li><a className='smooth-underline-transition' href="#">About</a></li>
           <li><a className='smooth-underline-transition' href="#">Blog</a></li>

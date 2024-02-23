@@ -1,11 +1,12 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+import SecondPage from "./components/SecondPage"
+import ThirdPage from "./components/ThirdPage"
 import { useState, useEffect } from 'react';
 import Navbar from "./components/Navbar"
 import TextAnimation from "./components/TextAnimation"
 import './App.css'
 import "./Global.css"
 import Imgsrc from './bodyImage.png';
-import SecondPage from "./components/SecondPage"
 import SwitchTheme from "./assets/SwitchTheme.svg"
 function App() {
   const [Btncolor, setBtncolor] = useState(true);
@@ -51,10 +52,11 @@ function App() {
           </div>
           <div className='flex justify-center items-center text-xl md:text-2xl lets_talk gap-2 mt-5 font-sans'>Wanna get in Touch?<span><a href="">Lets Talk...</a></span></div>
         </div>
-        <marquee behavior="" className="absolute bottom-0 text-5xl md:text-5xl lg:text-6xl 2xl:text-9xl font-mono scrollText p-2 md:p-1" direction="scroll">Marketing . Technical . Creative. Marketing . Technical . Creative</marquee>
-        
+        {/* Adding a tag here with postion absolute will make it appear on the first page at the end of the image. */}
+
       </div>
       <SecondPage />
+      <ThirdPage/>
 
     </>
   )

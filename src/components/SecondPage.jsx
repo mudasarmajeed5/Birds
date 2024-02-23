@@ -16,12 +16,12 @@ const SecondPage = () => {
 
     return (
         <div className='secondPage'>
-            <div className="pt-5 secondPage_head flex flex-col items-end justify-end">
+            <div className="pt-5 secondPage_head flex flex-col items-center justify-center">
                 <div id='creatingExperiences' className='flex items-center m-4'>
                     <div className='text-lg mr-8 md:text-2xl lg:text-4xl 2xl:text-5xl 2xl:mb-10 2xl:pr-10'>Creating Experiences Through</div>
                 </div>
-                <div className='w-[70%] md:w-[50%] xl:w-[40%] text-xl md:text-2xl lg:text-3xl  2xl:pr-5 2xl:text-6xl'>
-                    Digital Services, <span className='spancolor'>a comprehensive approach</span> to the Digital Landscape
+                <div className='text-xl md:text-2xl lg:text-3xl  2xl:pr-5 2xl:text-6xl'>
+                    Digital Services, <span className='spancolor'>a comprehensive approach</span> to the Digital Landscape.
                 </div>
             </div>
             <div id="explore" className="mt-[8%] secondPage_cards flex flex-wrap">

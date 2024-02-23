@@ -17,6 +17,12 @@ body{
   --card13-purple: #9b59b6;
   --card56-yellow: #f1c40f;
   --card79-blue: #0c9dfd;
+
+  /* Third Page color Theme, selected from colorhunt.co */
+  --ThirdPage:#070F2B;
+  --ThirdPage-text:#9290C3;
+  --ThirdPage-Head:#1B1A55;
+  --ThirdPage-Buttons:#FFE3CA;
 }
 .l_theme{
   --spancolor:red;
@@ -28,4 +34,11 @@ body{
   --card13-purple: #ff7b00;
   --card56-yellow: #f1948a; 
   --card79-blue: rgb(0, 255, 55);
+
+  /* Third Page colors for the lighTer Theme */
+  --ThirdPage:#F0F3FF;
+  --ThirdPage-Head:#211951;
+  --ThirdPage-text:#836FFF;
+  --ThirdPage-Buttons:#15F5BA;
+
 }
