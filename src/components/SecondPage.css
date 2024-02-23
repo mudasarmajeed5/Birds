@@ -48,7 +48,7 @@
 }
 .card:hover{
     color: black;
-    background-color: rgb(250, 225, 0);
+    background-color: var(--card-1-color);
 }
 .card:nth-child(2n):hover{
     background-color: var(--card13-purple);
