@@ -10,14 +10,14 @@ body{
 :root{
   --spancolor:rgb(280,280, 0);
   --text-color:white;
-  --background-color:rgb(25, 49, 63);
+  --background-color: #35374B;
   --text-button-color:rgb(1, 225, 255);
   --svg-color:white;
 
-  --card-1-color: rgb(79, 173, 70);
-  --card13-purple: #257c7c;
+  --card-1-color: #50727B;
+  --card13-purple: #598a97;
   --card56-yellow: #f1c40f;
-  --card79-blue: #8865c9;
+  --card79-blue: #377181;
 
   /* Third Page color Theme, selected from colorhunt.co */
   --ThirdPage:#070F2B;
@@ -28,14 +28,14 @@ body{
 .l_theme{
   --spancolor:red;
   --text-color:black;
-  --background-color:rgb(192, 165, 201);
+  --background-color: #B5C0D0;
   --text-button-color:rgb(280,280, 0)
   --svg-color:red;
 
-  --card-1-color: rgb(89, 96, 128);
-  --card13-purple: #8961b8;
+  --card-1-color: #CCD3CA;
+  --card13-purple: #F5E8DD;
   --card56-yellow: #f1948a; 
-  --card79-blue: rgb(216, 102, 191);
+  --card79-blue: #EED3D9;
 
   /* Third Page colors for the lighTer Theme */
   --ThirdPage:#F0F3FF;
