@@ -20,7 +20,7 @@ const SecondPage = () => {
                 <div id='creatingExperiences' className='flex items-center m-4'>
                     <div className='text-lg mr-8 md:text-2xl lg:text-4xl 2xl:text-5xl 2xl:mb-10 2xl:pr-10'>Creating Experiences Through</div>
                 </div>
-                <div className='text-xl md:text-2xl lg:text-3xl  2xl:pr-5 2xl:text-6xl'>
+                <div className='text-xl md:text-2xl lg:text-3xl 2xl:text-6xl px-4 text-center'>
                     Digital Services, <span className='spancolor'>a comprehensive approach</span> to the Digital Landscape.
                 </div>
             </div>

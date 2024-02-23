@@ -75,7 +75,7 @@ a {
     left: 0;
     width: 100%;
     height: 2px;
-    background-color: yellow;
+    background-color: var(--spancolor);
     transform: scaleX(0);
     transform-origin: 50%;
     transition: transform 0.3s ease;
@@ -105,10 +105,10 @@ a {
 
 .glassglass {
     backdrop-filter: blur(5px);
-    background-color: rgba(0, 0, 0, 0.0);
+    background-color: rgba(0, 0, 0, 0.2);
 }
 .toggleNavColor{
-    color: var(--text-color);
+    color: antiquewhite;
 }
 @media only screen and (max-width:767px) {
 

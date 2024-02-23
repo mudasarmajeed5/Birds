@@ -14,7 +14,7 @@ body{
   --text-button-color:rgb(1, 225, 255);
   --svg-color:white;
 
-  --card-1-color: rgb(88, 124, 148);
+  --card-1-color: rgb(79, 173, 70);
   --card13-purple: #257c7c;
   --card56-yellow: #f1c40f;
   --card79-blue: #8865c9;
@@ -22,7 +22,7 @@ body{
   /* Third Page color Theme, selected from colorhunt.co */
   --ThirdPage:#070F2B;
   --ThirdPage-text:#9e9cc7;
-  --ThirdPage-Head:#1B1A55;
+  --ThirdPage-Head:#d9ff00;
   --ThirdPage-Buttons:#FFE3CA;
 }
 .l_theme{
@@ -32,7 +32,7 @@ body{
   --text-button-color:rgb(280,280, 0)
   --svg-color:red;
 
-  --card-1-color: rgb(159, 95, 179);
+  --card-1-color: rgb(89, 96, 128);
   --card13-purple: #8961b8;
   --card56-yellow: #f1948a; 
   --card79-blue: rgb(216, 102, 191);

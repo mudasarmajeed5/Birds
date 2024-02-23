@@ -37,7 +37,7 @@ const TextAnimation = () => {
   
     return (
       <div className="flex justify-center items-center flex-col gap-3">
-      <div className='md:text-3xl text-2xl sm:text-3xl sliding-text text-white font-bold'>PIONEERING NEW PERSPECTIVES</div>
+      <div className='md:text-3xl text-xl sm:text-3xl sliding-text text-white font-bold'>PIONEERING NEW PERSPECTIVES</div>
       <div id='hide' className={`md:text-4xl text-3xl text-yellow-500 font-bold ${OF? "":"hidden"}`}>OF</div>
       <div id='content_types' className='mt-2 xl:text-6xl text-3xl  md:text-5xl sliding-text font-bold'>Unleash</div>
       

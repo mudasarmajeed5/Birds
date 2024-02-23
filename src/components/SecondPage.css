@@ -55,7 +55,6 @@
 }
 .card:nth-child(3n):hover{
     background-color: var(--card79-blue);
-    color: var(--text-color);
 }
 .card:hover .seeDetails {
     color: red;
