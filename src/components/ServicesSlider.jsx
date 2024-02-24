@@ -1,209 +1,182 @@
 //  This is a Component that shows the services the agency in Providing in the form of Sliding Images with the content!
-import React,{useEffect} from 'react'
+import React, { useEffect, useState } from 'react'
 import "./ServicesSlider.css"
-const ServicesSlider = () => {
-    useEffect(() => {
-        const sliders = document.querySelectorAll('.glide');
-    
-        const initializedSliders = [...sliders].map((slider, index) => {
-          let newSlider = new Glide(slider, {
-             type: 'slider',
-            animationDuration: 1200,
-            animationTimingFunc: 'cubic-bezier(0.785, 0.135, 0.15, 0.86)',
-            rewind: false,
-            gap: 0,
-          }).mount();
-          
-          if(slider.classList.contains('glide__main')) {
-            newSlider.on('run.before', function(e) {
-              translateSlider(e, slider);
-            });
-          }
-          
-          newSlider.mount();
-          return newSlider;
-        });
-        
-        const translateSlider = function(e, slider) {
-            initializedSliders.forEach(sibling => {
-              let slides = sibling._c.Html.slides;
-              let activeSlide = slides.find(slide => slide.classList.contains('active'));
-              let nexBtn = document.querySelector('.glide__arrow--right');
-              let prevBtn = document.querySelector('.glide__arrow--left');
-        
-               let id = sibling._i;
-              let activeClassId = id;
-              
-              if(!!activeSlide) {
-                activeSlide.classList.remove('active');
-              }
+import Laptop from "../assets/ThirdPageImages/Laptop_Image.png"
+import Night from "../assets/ThirdPageImages/Article_2_Table.jpg"
+import Article from "../assets/ThirdPageImages/NightOfHope.jpg"
 
-              
-              if(e.direction === "<" && sibling._i > 1 && sibling._i <= slides.length) {
-                nexBtn.dataset.disabled = false;
-                let id = sibling._i - 1;
-                activeClassId = id;
-              } else if(e.direction === "<" && sibling._i <= 1) {
-                prevBtn.dataset.disabled = true;
-                activeClassId = sibling._i - 1;
-               } else if(e.direction === ">" && sibling._i >= 0 && sibling._i < slides.length - 2) {
-                 prevBtn.dataset.disabled = false;
-                 let id = sibling._i + 1;
-                 activeClassId = sibling._i;
-               } else if(e.direction === ">" && sibling._i  >= slides.length - 2) {
-                 nexBtn.dataset.disabled = true;
-                 activeClassId = sibling._i + 1;
-               } 
-              
-              if(activeClassId < slides.length && activeClassId >= 0 ) {
-                let slideId = activeClassId ;
-                if(e.direction === ">" && slideId === 0) {
-                  slideId = 1;
-                }
-                slides[slideId].classList.add('active');
-              }
-              
-              sibling.go(e.direction);
-            });
-        };
+const ServicesSlider = () => {
+  const handleClick = (e, slideId) => {
+    e.preventDefault();
+    e.stopPropagation();
+    const targetSlide = document.getElementById(slideId);
     
-    }, []);
-    
-    
+    if (targetSlide) {
+      targetSlide.scrollIntoView({
+        behavior: 'smooth',
+        block: 'nearest', // or 'start' or 'end'
+        inline: 'start'   // or 'start' or 'end'
+      });
+    }
+  };
 
   return (
-    <div className="slider__container my-5">
-    <div className="slider__wrapper">
-      <div className="glide glide__text">
-        <div className="glide__track" data-glide-el="track">
-          <ul className="glide__slides">
-            <li className="glide__slide">
-              <h2 className="slider__title">Title 1</h2>
-            </li>
-            <li className="glide__slide">
-              <h2 className="slider__title">Title 2</h2>
-            </li>
-            <li className="glide__slide">
-              <h2 className="slider__title">Title 3</h2>
-            </li>
-          </ul>
+    <>
+      <section className='contain'>
+        <div className="sliderwrapper">
+          <div className="slider">
+            <div className="slides slide1" id="slide-1">
+              <div className="contunt">
+                <h1 className='servh'>Digital Marketing</h1>
+                <ul>
+                  <li>SEO</li>
+                  <li>Social Media</li>
+                  <li>Engagement</li>
+                  <li>Activities</li>
+                  <li>Product Marketing</li>
+                  <li>Website Development</li>
+                  <li>App Development</li>
+                  <li>Social Media Accounts Management</li>
+                  <li>Web Blogging</li>
+                  <li>Influencer Marketing</li>
+                  <li>AR/ VR</li>
+                </ul>
+              </div>
+            </div>
+            <div className="slides slide2" id="slide-2">
+              <div className="contunt">
+                <h1 className='servh'>Creative Services</h1>
+                <ul>
+                  <li>Graphic Design</li>
+                  <li>Mood board/Storyboard</li>
+                  <li>Copywriting</li>
+                  <li>Illustration</li>
+                  <li>Content Writing</li>
+                  <li>Marketing Strategy</li>
+                  <li>IMC (Integrated Marketing Communication)</li>
+                  <li>Art Direction</li>
+                  <li>Music and Sound</li>
+                  <li>Production</li>
+                  <li>Environmental Design</li>
+                </ul>
+              </div>
+            </div>
+            <div className="slides slide3" id="slide-3">
+              <div className="contunt">
+                <h1 className='servh'>Outdoor Advertising</h1>
+                <ul>
+                  <li>Billboards</li>
+                  <li>Transit Advertising</li>
+                  <li>Digital Outdoor Advertising</li>
+                  <li>Airport Advertising</li>
+                  <li>Guerrilla Advertising</li>
+                  <li>Aerial Advertising</li>
+                  <li>Interactive Advertising</li>
+                  <li>Wall Murals</li>
+                  <li>Digital Signage</li>
+                  <li>Stadium and Arena Advertising</li>
+                  <li>Tradeshow and Exhibition Displays</li>
+                </ul>
+              </div>
+            </div>
+            <div className="slides slide5" id="slide-4">
+              <div className="contunt">
+                <h1 className='servh'>Visual Story Telling</h1>
+                <ul>
+                  <li>Cinematography</li>
+                  <li>Fashion films</li>
+                  <li>TV Commercials</li>
+                  <li>Film Making</li>
+                  <li>Concept writing</li>
+                  <li>Documentaries</li>
+                  <li>Animation</li>
+                  <li>Full Video Production</li>
+                  <li>Photography</li>
+                  <li>Digital video commercial</li>
+                </ul>
+              </div>
+            </div>
+            <div className="slides slide6" id="slide-5">
+              <div className="contunt">
+                <h1 className='servh'>Interior Designing</h1>
+                <ul>
+                  <li>Traditional Interior Design</li>
+                  <li>Contemporary Interior Design</li>
+                  <li>Modern Interior Design</li>
+                  <li>Minimalist Interior Design</li>
+                  <li>Industrial Interior Design</li>
+                  <li>Eclectic Interior Design</li>
+                  <li>Mediterranean Interior Design</li>
+                  <li>Green Interior Design (Sustainable Design)</li>
+                  <li>Smart Home Interior Design</li>
+                  <li>Biophilic Interior Design</li>
+                </ul>
+              </div>
+            </div>
+            <div className="slides slide7" id="slide-6">
+              <div className="contunt">
+                <h1 className='servh'>Branding</h1>
+                <ul>
+                  <li>Brand Building </li>
+                  <li>Logo Designing</li>
+                  <li>Broacher Designing</li>
+                  <li>Brand Endorsement</li>
+                  <li>Brand Ambassador</li>
+                  <li>Stationary Printing and Designing</li>
+                  <li>Product Designing 3D</li>
+                  <li>3D Modelling and Developing</li>
+                </ul>
+              </div>
+            </div>
+            <div className="slides slide8" id="slide-7">
+              <div className="contunt">
+                <h1 className='servh'>Event Management</h1>
+                <ul>
+                  <li>Confrences</li>
+                  <li>Seminars and Workshops</li>
+                  <li>Trade Shows and Exhibitions</li>
+                  <li>Symposiums</li>
+                  <li>Corporate Events</li>
+                  <li>Expos and Fairs</li>
+                  <li>Fashion Shows</li>
+                  <li>Cultural and Arts Events</li>
+                  <li>Sporting Events</li>
+                  <li>Music Concerts</li>
+                  <li>Weddings and Celebrations</li>
+                  <li>Awards Shows</li>
+                  <li>Product Launches</li>
+                </ul>
+              </div>
+            </div>
+            <div className="slides slide9" id="slide-8">
+              <div className="contunt">
+                <h1 className='servh'>Airing</h1>
+                <ul>
+                  <li>TV Airing</li>
+                  <li>Radio Airing</li>
+                  <li>Bloggers Engagement</li>
+                  <li>Social Media Boosting</li>
+                  <li>Print Media Management</li>
+                  <li>Newspaper Management</li>
+                  <li>Cinema</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div className="slider-nav">
+            <button className='slider1' onClick={(e) => handleClick(e, 'slide-1')}></button>
+            <button className='slider2' onClick={(e) => handleClick(e, 'slide-2')}></button>
+            <button className='slider3' onClick={(e) => handleClick(e, 'slide-3')}></button>
+            <button className='slider4' onClick={(e) => handleClick(e, 'slide-4')}></button>
+            <button className='slider5' onClick={(e) => handleClick(e, 'slide-5')}></button>
+            <button className='slider5' onClick={(e) => handleClick(e, 'slide-6')}></button>
+            <button className='slider5' onClick={(e) => handleClick(e, 'slide-7')}></button>
+            <button className='slider5' onClick={(e) => handleClick(e, 'slide-8')}></button>
+          </div>
         </div>
-      </div>
-      <div className="glide glide__small glide__prev">
-        <div className="glide__track" data-glide-el="track">
-          <ul className="glide__slides">
-            <li className="glide__slide" />
-            <li className="glide__slide">
-              <div className="img__cover">
-                <div
-                  className="img__bg"
-                  style={{
-                    backgroundImage:
-                      "url(https://images.unsplash.com/photo-1559626627-cb31b201e27f?ixlib=rb-1.2.1&auto=format&fit=crop&w=797&q=80)"
-                  }}
-                ></div>
-              </div>
-            </li>
-            <li className="glide__slide">
-              <div className="img__cover">
-                <div
-                  className="img__bg"
-                  style={{
-                    backgroundImage:
-                      "url(https://images.unsplash.com/photo-1565378434747-262417385c7f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=749&q=80)"
-                  }}
-                ></div>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div className="glide glide__main">
-        <div className="glide__track" data-glide-el="track">
-          <ul className="glide__slides">
-            <li className="glide__slide active">
-              <div className="img__cover">
-                <div
-                  className="img__bg"
-                  style={{
-                    backgroundImage:
-                      "url(https://images.unsplash.com/photo-1559626627-cb31b201e27f?ixlib=rb-1.2.1&auto=format&fit=crop&w=797&q=80)"
-                  }}
-                ></div>
-              </div>
-            </li>
-            <li className="glide__slide">
-              <div className="img__cover">
-                <div
-                  className="img__bg"
-                  style={{
-                    backgroundImage:
-                      "url(https://images.unsplash.com/photo-1565378434747-262417385c7f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=749&q=80)"
-                  }}
-                ></div>
-              </div>
-            </li>
-            <li className="glide__slide">
-              <div className="img__cover">
-                <div
-                  className="img__bg"
-                  style={{
-                    backgroundImage:
-                      "url(https://images.unsplash.com/photo-1554329209-5c31b5b35e69?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80)"
-                  }}
-                ></div>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <div className="glide__arrows" data-glide-el="controls">
-          <button
-            className="glide__arrow glide__arrow--left"
-            data-glide-dir="<"
-            data-disabled="true"
-          >
-            &lt;
-          </button>
-          <button
-            className="glide__arrow glide__arrow--right"
-            data-glide-dir=">"
-            data-disabled="false"
-          >
-            &gt;
-          </button>
-        </div>
-      </div>
-      <div className="glide glide__small  glide__next">
-        <div className="glide__track" data-glide-el="track">
-          <ul className="glide__slides">
-            <li className="glide__slide">
-              <div className="img__cover">
-                <div
-                  className="img__bg"
-                  style={{
-                    backgroundImage:
-                      "url(https://images.unsplash.com/photo-1565378434747-262417385c7f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=749&q=80)"
-                  }}
-                ></div>
-              </div>
-            </li>
-            <li className="glide__slide">
-              <div className="img__cover">
-                <div
-                  className="img__bg"
-                  style={{
-                    backgroundImage:
-                      "url(https://images.unsplash.com/photo-1554329209-5c31b5b35e69?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80)"
-                  }}
-                ></div>
-              </div>
-            </li>
-            <li className="glide__slide" />
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
+      </section>
+
+    </>
   )
 }
 
