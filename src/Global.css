@@ -25,7 +25,11 @@ body{
   --ThirdPage-Head:#d9ff00;
   --ThirdPage-Buttons:#FFE3CA;
 }
-.l_theme{
+
+        /* Change of Plans */
+
+
+/* .l_theme{
   --spancolor:red;
   --text-color:black;
   --background-color: #B5C0D0;
@@ -37,10 +41,9 @@ body{
   --card56-yellow: #f1948a; 
   --card79-blue: #EED3D9;
 
-  /* Third Page colors for the lighTer Theme */
   --ThirdPage:#F0F3FF;
   --ThirdPage-Head:#211951;
   --ThirdPage-text:#836FFF;
   --ThirdPage-Buttons:#15F5BA;
 
-}
+} */

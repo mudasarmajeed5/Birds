@@ -8,37 +8,38 @@ import './App.css'
 import "./Global.css"
 import Imgsrc from './bodyImage.png';
 import SwitchTheme from "./assets/SwitchTheme.svg"
+import ServicesSlider from './components/ServicesSlider';
 function App() {
-  const [Btncolor, setBtncolor] = useState(true);
-  const [showButton, setShowButton] = useState(false);
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY >= 1000) {
-        setShowButton(true);
-      } else {
-        setShowButton(false);
-      }
-    };
+  // const [Btncolor, setBtncolor] = useState(true);
+  // const [showButton, setShowButton] = useState(false);
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     if (window.scrollY >= 1000) {
+  //       setShowButton(true);
+  //     } else {
+  //       setShowButton(false);
+  //     }
+  //   };
 
-    window.addEventListener('scroll', handleScroll);
+  //   window.addEventListener('scroll', handleScroll);
 
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-  const ToggleDarkMode = (e) => {
-    document.body.classList.toggle("l_theme")
-  }
-  const btnClr = () => {
-    setBtncolor(!Btncolor);
-    console.log(Btncolor);
-  }
+  //   return () => {
+  //     window.removeEventListener('scroll', handleScroll);
+  //   };
+  // }, []);
+  // const ToggleDarkMode = (e) => {
+  //   document.body.classList.toggle("l_theme")
+  // }
+  // const btnClr = () => {
+  //   setBtncolor(!Btncolor);
+  //   console.log(Btncolor);
+  // }
 
 
 
   return (
     <>
-      {showButton && <div className='fixed z-[3] left-2 top-[50vh]'><button id="dark-mode" className={`p-2 rounded-full ${Btncolor ? "bg-white" : "bg-black"}`} onClick={(e) => { ToggleDarkMode(e); btnClr() }}> <img src={SwitchTheme} alt="" /></button></div>}
+      {/* {showButton && <div className='fixed z-[3] left-2 top-[50vh]'><button id="dark-mode" className={`p-2 rounded-full ${Btncolor ? "bg-white" : "bg-black"}`} onClick={(e) => { ToggleDarkMode(e); btnClr() }}> <img src={SwitchTheme} alt="" /></button></div>} */}
       <Navbar />
       <div className="FirstPage">
         <div className="img">
@@ -57,7 +58,7 @@ function App() {
       </div>
       <SecondPage />
       <ThirdPage/>
-
+      <ServicesSlider/>
     </>
   )
 }
