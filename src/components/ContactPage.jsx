@@ -10,7 +10,7 @@ const ContactPage = () => {
     <div id="contact" className='ContactPage flex md:flex-row flex-col w-[100%] justify-center md:justify-around'>
       <div className='flex flex-col w-full gap-10 mt-10 justify-center items-center'>
         <h1 className='text-xl md:'>Take the Road to</h1>
-        <p className='digitize md:text-3xl text-2xl'>Digitizing your Business Growth</p>
+        <p className='digitize md:text-3xl lg:text-4xl  text-2xl'>Digitizing your Business Growth</p>
       </div>
       <div className='w-full flex flex-col py-5 items-center md:items-start justify-center text-2xl md:text-3xl 2xl:text-4xl'>
         <h1 className='underline underline-offset-4 mb-4 md:mb-0'>Start a conversation with us:</h1>

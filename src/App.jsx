@@ -1,11 +1,11 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from "./components/Navbar"
+import TextAnimation from "./components/TextAnimation"
 import SecondPage from "./components/SecondPage"
 import ThirdPage from "./components/ThirdPage"
-import TextAnimation from "./components/TextAnimation"
 import ContactPage from "./components/ContactPage"
 import Footer from "./components/Footer"
-import { useState, useEffect } from 'react';
+
 import './App.css'
 import "./Global.css"
 import Imgsrc from './bodyImage.png';
