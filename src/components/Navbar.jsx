@@ -28,7 +28,7 @@ const Navbar = () => {
           <li><a className='smooth-underline-transition' href="#explore">Services</a></li>
           <li><a className='smooth-underline-transition' href="#">About</a></li>
           <li><a className='smooth-underline-transition' href="#">Blog</a></li>
-          <li><a className='smooth-underline-transition' href="#">Contact</a></li>
+          <li><a className='smooth-underline-transition' href="#contact">Contact</a></li>
         </ul>
       </nav>
     );
@@ -52,7 +52,7 @@ const Navbar = () => {
   );
   return (
 
-    <header className="text-gray-600 body-font glassglass z-50 sticky top-0 ">
+    <header className="body-font glassglass z-50 sticky top-0 ">
       <div className="container mx-auto flex flex-wrap  md:flex-row md:items-center justify-between items-center nav-pad">
         <a className=" flex title-font font-medium items-center text-gray-900 mb-0 md:mb-0">
           <img className='nav-logo' src={logo} alt="" />

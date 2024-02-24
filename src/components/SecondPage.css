@@ -7,8 +7,9 @@
     color: var(--spancolor);
 }
 .secondPage{
-    background-color: var(--background-color);
+    background-color:#00042a;
     color: var(--text-color);
+    position: relative;
 }
 .spancolor{
     color: var(--spancolor);

@@ -1,0 +1,50 @@
+@-webkit-keyframes AnimationBackground {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationBackground {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationBackground {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+
+.ContactPage{
+    background-image: linear-gradient(135deg, var(--Contact-gradient1),var(--Contact-gradient2),var(--Contact-gradient3));
+    -webkit-animation: AnimationBackground 40s ease infinite;
+    -moz-animation: AnimationBackground 40s ease infinite;
+    animation: AnimationBackground 40s ease infinite;
+    background-size: 400% 400%;
+    color: var(--text-color);
+    width: 100vw;
+    padding: 40px 0px;
+}
+.flex-col h1{
+    font-family: 'Poppins',sans-serif;
+}
+.digitize{
+    color: var(--Contact-Heading);
+}
+#message{
+    width: 100%;
+    height: 100px;
+}
+form input:nth-child(even){
+    outline: none;
+    border-bottom: 2px solid #125183;
+}
+
+form textarea{
+    border-bottom: 2px solid yellow;
+}
+@media only screen and (max-width:767px){
+    .digitize{
+        text-shadow: 0px 0px 10px var(--Contact-Heading);
+    }
+}

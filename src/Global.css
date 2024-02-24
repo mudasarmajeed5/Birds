@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 body{
-  background-image: url(bodyImage.png);
+  background-color: var(--ThirdPage);
 }
 :root{
   --spancolor:rgb(280,280, 0);
@@ -24,26 +24,14 @@ body{
   --ThirdPage-text:#9e9cc7;
   --ThirdPage-Head:#d9ff00;
   --ThirdPage-Buttons:#FFE3CA;
+
+
+
+  /* ContactPage BackgroundColor */
+  --Contact-gradient1:#125183;
+  --Contact-gradient2:#19104b;
+  --Contact-gradient3:#020f36;
+  
+  /* ContactPage ContentColors */
+  --Contact-Heading:#04e4ff;
 }
-
-        /* Change of Plans */
-
-
-/* .l_theme{
-  --spancolor:red;
-  --text-color:black;
-  --background-color: #B5C0D0;
-  --text-button-color:rgb(280,280, 0)
-  --svg-color:red;
-
-  --card-1-color: #CCD3CA;
-  --card13-purple: #F5E8DD;
-  --card56-yellow: #f1948a; 
-  --card79-blue: #EED3D9;
-
-  --ThirdPage:#F0F3FF;
-  --ThirdPage-Head:#211951;
-  --ThirdPage-text:#836FFF;
-  --ThirdPage-Buttons:#15F5BA;
-
-} */

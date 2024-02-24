@@ -96,12 +96,6 @@
   /**********************
       styles
   ***********************/
-  body {
-    padding: 0;
-    background: #181726;
-    font-family: "Ultra", serif;
-  }
-  
   .slider__container {
     width: 100%;
     padding-bottom: 5rem;
