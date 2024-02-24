@@ -28,7 +28,7 @@
 
 .sliderwrapper{
   position: relative;
-  max-width: 70vw;
+  max-width: 90vw;
   margin: 0 auto;
 }
 
@@ -73,7 +73,7 @@
 
 .contunt{
   position: absolute;
-  bottom: 0;
+  bottom: 30px;
 }
 
 .servh{
