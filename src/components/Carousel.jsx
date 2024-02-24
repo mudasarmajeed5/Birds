@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react'
 import "./ServicesSlider.css"
 
-const ServicesSlider = () => {
+const Carousel = () => {
 
 
   return (
@@ -34,4 +34,4 @@ const ServicesSlider = () => {
   )
 }
 
-export default ServicesSlider
+export default Carousel
