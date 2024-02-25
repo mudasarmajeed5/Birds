@@ -14,7 +14,7 @@ const Carousel = () => {
 
   return (
     <>
-    <div class="logos">
+    <div className="logos">
       <div class="logos-slide">
         <img src={threem} />
         <img src={barstool} />
@@ -26,7 +26,7 @@ const Carousel = () => {
         <img src={mrbeast} />
       </div>
 
-      <div class="logos-slide">
+      <div className="logos-slide">
         <img src={threem} />
         <img src={barstool} />
         <img src={budweiser}/>
