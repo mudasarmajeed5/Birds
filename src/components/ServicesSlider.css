@@ -1,5 +1,8 @@
 .contain{
   color : white ;
+  padding: 2rem 23vw;
+  position: center;
+  height: 50vw;
 }
 
 .slide1{
@@ -29,7 +32,6 @@
 
 .slides{
   background-size: 80%;
-  background-position: right;
   background-repeat: no-repeat;
   width: 100%;
   position: relative;
@@ -37,9 +39,12 @@
 
 .sliderwrapper{
   position: relative;
+  height: 100%;
+  overflow: hidden;
 }
 
 .slider{
+  height: 90%;
   display: flex;
   aspect-ratio: 16/9;
   overflow-x: hidden;
@@ -59,7 +64,7 @@
   display: flex;
   column-gap: 1rem;
   position: absolute;
-  bottom: 1.25rem;
+  bottom: 9rem;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
@@ -78,7 +83,7 @@
   opacity: 1;
   width: 0.75rem;
   height: 0.75rem;
-} 
+}
 
 .contunt{
   position: absolute;
@@ -89,22 +94,34 @@
   font-size: calc(1.325rem + .9vw);
 }
 
-@media screen and (max-width:600px)
+@media screen and (max-width:1000px)
 {
+
+  .slide1{
+    background-image: url("../assets/ThirdPageImages/Vert.jpg");
+  }
+
   .contain{
-    height: 70vh;
+    padding: 2rem 5vw;
   }
+
+
+  .contain, .sliderwrapper{
+    height: 90vh;
+    width: auto;
+  }
+
   .slides{
-    background-size: 100vw;
-  }
-  .contunt{
-    bottom: 0;
-    font-size: 16px;
+    background-size: 40%;
   }
 
-  .servh{
-    font-size: 15px;
-  }
 
+}
+
+@media screen and (max-width:675px){
+
+  .contain{
+    padding: 2rem 0;
+  }
 
 }
