@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from "./components/Navbar"
 import TextAnimation from "./components/TextAnimation"
-import Carousel  from "./components/Carousel";
+import Carousel from "./components/Carousel";
 import SecondPage from "./components/SecondPage"
 import ThirdPage from "./components/ThirdPage"
 import ContactPage from "./components/ContactPage"
@@ -16,7 +16,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <div className="FirstPage">
+      <div className="FirstPage relative">
         <div className="img">
           <img className='absolute object-cover object-center top-0 z-[-1000]  h-[100%] w-full' src={Imgsrc} alt="" />
         </div>
@@ -29,14 +29,16 @@ function App() {
           <div className='flex justify-center items-center text-xl md:text-2xl lets_talk gap-2 mt-5 font-sans'>Wanna get in Touch?<span><a href="">Lets Talk...</a></span></div>
         </div>
         {/* Adding a tag here with postion absolute will make it appear on the first page at the end of the image. */}
+        <div className="absolute bottom-0 w-full">
+        <Carousel />
+        </div>
 
       </div>
-      <Carousel/>
       <SecondPage />
-      <ThirdPage/>
-      <ServicesSlider/>
-      <ContactPage/>
-      <Footer/>
+      <ThirdPage />
+      <ServicesSlider />
+      <ContactPage />
+      <Footer />
     </>
   )
 }
