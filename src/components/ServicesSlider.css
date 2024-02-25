@@ -62,13 +62,15 @@
   width: 0.5rem;
   height: 0.5rem;
   border-radius: 50%;
-  background-color: #fff;
+  background-color: #e78787;
   opacity: 0.75;
   transition: opacity ease 250ms;
 }
 
 .slider-nav button:hover{
   opacity: 1;
+  width: 0.75rem;
+  height: 0.75rem;
 } 
 
 .contunt{
@@ -78,4 +80,19 @@
 
 .servh{
   font-size: calc(1.325rem + .9vw);
+}
+
+@media screen and (max-width:600px)
+{
+
+  .contunt{
+    font-size: 9px;
+  }
+
+  .servh{
+    font-size: 15px;
+    /* font-size: calc(1.325rem + .9vw); */
+  }
+
+
 }

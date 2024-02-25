@@ -1,9 +1,6 @@
 //  This is a Component that shows the services the agency in Providing in the form of Sliding Images with the content!
 import React, { useEffect, useState } from 'react'
 import "./ServicesSlider.css"
-import Laptop from "../assets/ThirdPageImages/Laptop_Image.png"
-import Night from "../assets/ThirdPageImages/Article_2_Table.jpg"
-import Article from "../assets/ThirdPageImages/NightOfHope.jpg"
 
 const ServicesSlider = () => {
   const handleClick = (e, slideId) => {
