@@ -102,9 +102,8 @@
   }
 
   .contain{
-    padding: 2rem 5vw;
+    padding: 2rem 15vw;
   }
-
 
   .contain, .sliderwrapper{
     height: 90vh;
@@ -115,10 +114,13 @@
     background-size: 40%;
   }
 
+  .slider-nav{
+    bottom: 6rem;
+  }
 
 }
 
-@media screen and (max-width:675px){
+@media screen and (max-width:475px){
 
   .contain{
     padding: 2rem 0;
