@@ -1,4 +1,3 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from "./components/Navbar"
 import TextAnimation from "./components/TextAnimation"
 import Carousel from "./components/Carousel";
@@ -6,11 +5,12 @@ import SecondPage from "./components/SecondPage"
 import ThirdPage from "./components/ThirdPage"
 import ContactPage from "./components/ContactPage"
 import Footer from "./components/Footer"
+import ServicesSlider from './components/ServicesSlider';
+import ServiceSlider from './components/AdditonalComponents/ServiceSlider';
 
 import './App.css'
 import "./Global.css"
 import Imgsrc from './bodyImage.png';
-import ServicesSlider from './components/ServicesSlider';
 function App() {
 
   return (
@@ -36,7 +36,8 @@ function App() {
       </div>
       <SecondPage />
       <ThirdPage />
-      <ServicesSlider />
+      {/* <ServicesSlider /> */}
+      <ServiceSlider/> 
       <ContactPage />
       <Footer />
     </>

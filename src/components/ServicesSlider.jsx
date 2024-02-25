@@ -1,7 +1,7 @@
 //  This is a Component that shows the services the agency in Providing in the form of Sliding Images with the content!
 import React, { useEffect, useState } from 'react'
 import "./ServicesSlider.css"
-
+import laptopImage from "../assets/ThirdPageImages/Laptop_Image.png"
 const ServicesSlider = () => {
   const handleClick = (e, slideId) => {
     e.preventDefault();
@@ -76,7 +76,7 @@ const ServicesSlider = () => {
                 </ul>
               </div>
             </div>
-            <div className="slides slide5" id="slide-4">
+            <div className="slides slide4" id="slide-4">
               <div className="contunt">
                 <h1 className='servh'>Visual Story Telling</h1>
                 <ul>
@@ -93,7 +93,7 @@ const ServicesSlider = () => {
                 </ul>
               </div>
             </div>
-            <div className="slides slide6" id="slide-5">
+            <div className="slides slide5" id="slide-5">
               <div className="contunt">
                 <h1 className='servh'>Interior Designing</h1>
                 <ul>
@@ -110,7 +110,7 @@ const ServicesSlider = () => {
                 </ul>
               </div>
             </div>
-            <div className="slides slide7" id="slide-6">
+            <div className="slides slide6" id="slide-6">
               <div className="contunt">
                 <h1 className='servh'>Branding</h1>
                 <ul>
@@ -125,7 +125,7 @@ const ServicesSlider = () => {
                 </ul>
               </div>
             </div>
-            <div className="slides slide8" id="slide-7">
+            <div className="slides slide7" id="slide-7">
               <div className="contunt">
                 <h1 className='servh'>Event Management</h1>
                 <ul>
@@ -145,7 +145,7 @@ const ServicesSlider = () => {
                 </ul>
               </div>
             </div>
-            <div className="slides slide9" id="slide-8">
+            <div className="slides slide8" id="slide-8">
               <div className="contunt">
                 <h1 className='servh'>Airing</h1>
                 <ul>

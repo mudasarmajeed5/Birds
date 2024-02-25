@@ -1,5 +1,4 @@
-.contain{
-  padding: 2rem;
+/* .contain{
   color : white ;
 }
 
@@ -18,9 +17,19 @@
 .slide5{
   background-image: url("../assets/ThirdPageImages/Laptop_Image.png");
 }
+.slide6{
+  background-image: url("../assets/ThirdPageImages/Laptop_Image.png");
+}
+.slide7{
+  background-image: url("../assets/ThirdPageImages/Laptop_Image.png");
+}
+.slide8{
+  background-image: url("../assets/ThirdPageImages/Laptop_Image.png");
+}
 
 .slides{
-  background-size: 100%;
+  background-size: 80%;
+  background-position: right;
   background-repeat: no-repeat;
   width: 100%;
   position: relative;
@@ -28,8 +37,6 @@
 
 .sliderwrapper{
   position: relative;
-  max-width: 90vw;
-  margin: 0 auto;
 }
 
 .slider{
@@ -84,16 +91,20 @@
 
 @media screen and (max-width:600px)
 {
-
+  .contain{
+    height: 70vh;
+  }
+  .slides{
+    background-size: 100vw;
+  }
   .contunt{
-    font-size: 9px;
-    
+    bottom: 0;
+    font-size: 16px;
   }
 
   .servh{
     font-size: 15px;
-    /* font-size: calc(1.325rem + .9vw); */
   }
 
 
-}
+} */

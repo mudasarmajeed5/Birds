@@ -12,7 +12,7 @@ const ContactPage = () => {
         <h1 className='text-xl md:'>Take the Road to</h1>
         <p className='digitize md:text-3xl lg:text-4xl  text-2xl'>Digitizing your Business Growth</p>
       </div>
-      <div className='w-full flex flex-col py-5 items-center md:items-start justify-center text-2xl md:text-3xl 2xl:text-4xl'>
+      <div className='w-full flex flex-col py-5 items-center md:items-center justify-center text-2xl md:text-3xl 2xl:text-4xl'>
         <h1 className='underline underline-offset-4 mb-4 md:mb-0'>Start a conversation with us:</h1>
         <form action="" method="post" className='flex flex-col gap-4 md:gap-2 py-4 text-xl'>
           <div className='flex items-center gap-4 md:gap-2'>
