@@ -1,6 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from "./components/Navbar"
 import TextAnimation from "./components/TextAnimation"
+import Carousel  from "./components/Carousel";
 import SecondPage from "./components/SecondPage"
 import ThirdPage from "./components/ThirdPage"
 import ContactPage from "./components/ContactPage"
@@ -30,6 +31,7 @@ function App() {
         {/* Adding a tag here with postion absolute will make it appear on the first page at the end of the image. */}
 
       </div>
+      <Carousel/>
       <SecondPage />
       <ThirdPage/>
       <ServicesSlider/>
