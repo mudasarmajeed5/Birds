@@ -36,8 +36,8 @@ function App() {
       </div>
       <SecondPage />
       <ThirdPage />
-      {/* <ServicesSlider /> */}
-      <ServiceSlider/> 
+      <ServicesSlider />
+      {/* <ServiceSlider/>  */}
       <ContactPage />
       <Footer />
     </>

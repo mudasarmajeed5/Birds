@@ -1,0 +1,29 @@
+/* #carouselExampleDark{
+    width: 100vw;
+    height: 70vh;
+    background-color: lightblue;
+}
+
+.carousel-item img{
+    width: 50vw;
+    height: 70vh;
+    margin: 0 auto;
+    object-fit: cover;
+    object-position: center;
+}
+@media only screen and (max-width:767px){
+    
+.carousel-item img{
+    width: 90vw;
+    height: 40vh;
+    margin: 0 auto;
+    object-fit: cover;
+    object-position: center;
+}
+#carouselExampleDark{
+    width: 100vw;
+    height: 45vh;
+    background-color: lightblue;
+}
+
+} */
