@@ -6,7 +6,6 @@ import ThirdPage from "./components/ThirdPage"
 import ContactPage from "./components/ContactPage"
 import Footer from "./components/Footer"
 import ServicesSlider from './components/ServicesSlider';
-import ServiceSlider from './components/AdditonalComponents/ServiceSlider';
 
 import './App.css'
 import "./Global.css"
@@ -37,7 +36,6 @@ function App() {
       <SecondPage />
       <ThirdPage />
       <ServicesSlider />
-      {/* <ServiceSlider/> */}
       <ContactPage />
       <Footer />
     </>

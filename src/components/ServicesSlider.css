@@ -1,49 +1,56 @@
-.contain{
-  color : white ;
+.contain {
+  color: white;
   padding: 2rem 23vw;
   position: center;
   height: 50vw;
 }
 
-.slide1{
-  background-image: url("../assets/ThirdPageImages/Laptop_Image.png");
-}
-.slide2{
-  background-image: url("../assets/ThirdPageImages/Laptop_Image.png");
-}
-.slide3{
-  background-image: url("../assets/ThirdPageImages/Laptop_Image.png");
-}
-.slide4{
-  background-image: url("../assets/ThirdPageImages/Laptop_Image.png");
-}
-.slide5{
-  background-image: url("../assets/ThirdPageImages/Laptop_Image.png");
-}
-.slide6{
-  background-image: url("../assets/ThirdPageImages/Laptop_Image.png");
-}
-.slide7{
-  background-image: url("../assets/ThirdPageImages/Laptop_Image.png");
-}
-.slide8{
+.slide1 {
   background-image: url("../assets/ThirdPageImages/Laptop_Image.png");
 }
 
-.slides{
+.slide2 {
+  background-image: url("../assets/ThirdPageImages/Laptop_Image.png");
+}
+
+.slide3 {
+  background-image: url("../assets/ThirdPageImages/Laptop_Image.png");
+}
+
+.slide4 {
+  background-image: url("../assets/ThirdPageImages/Laptop_Image.png");
+}
+
+.slide5 {
+  background-image: url("../assets/ThirdPageImages/Laptop_Image.png");
+}
+
+.slide6 {
+  background-image: url("../assets/ThirdPageImages/Laptop_Image.png");
+}
+
+.slide7 {
+  background-image: url("../assets/ThirdPageImages/Laptop_Image.png");
+}
+
+.slide8 {
+  background-image: url("../assets/ThirdPageImages/Laptop_Image.png");
+}
+
+.slides {
   background-size: 80%;
   background-repeat: no-repeat;
   width: 100%;
   position: relative;
 }
 
-.sliderwrapper{
+.sliderwrapper {
   position: relative;
   height: 100%;
   overflow: hidden;
 }
 
-.slider{
+.slider {
   height: 90%;
   display: flex;
   aspect-ratio: 16/9;
@@ -54,13 +61,13 @@
   border-radius: 0.5rem;
 }
 
-.slider div{
+.slider div {
   flex: 1 0 100%;
   scroll-snap-align: start;
   object-fit: cover;
 }
 
-.slider-nav{
+.slider-nav {
   display: flex;
   column-gap: 1rem;
   position: absolute;
@@ -79,51 +86,65 @@
   transition: opacity ease 250ms;
 }
 
-.slider-nav button:hover{
+.slider-nav button:hover {
   opacity: 1;
   width: 0.75rem;
   height: 0.75rem;
 }
 
-.contunt{
+.contunt {
   position: absolute;
   bottom: 30px;
 }
 
-.servh{
+.servh {
   font-size: calc(1.325rem + .9vw);
 }
 
-@media screen and (max-width:1000px)
-{
+@media screen and (max-width:1000px) {
 
-  .slide1{
+  .slide1 {
     background-image: url("../assets/ThirdPageImages/Vert.jpg");
   }
 
-  .contain{
+  .contain {
     padding: 2rem 15vw;
   }
 
-  .contain, .sliderwrapper{
+  .contain,
+  .sliderwrapper {
     height: 90vh;
     width: auto;
   }
 
-  .slides{
+  .slides {
     background-size: 40%;
   }
 
-  .slider-nav{
+  .slider-nav {
     bottom: 6rem;
   }
 
 }
 
-@media screen and (max-width:475px){
+.contunt ul li {
+  color: var(--Contact-Heading);
+}
 
-  .contain{
+@media screen and (max-width:475px) {
+  .servh{
+    margin-left: 10px;
+  }
+  .contain {
     padding: 2rem 0;
+  }
+
+  .contunt ul {
+    padding: 10px;
+  }
+  .contunt ul li{
+    list-style: disc;
+    margin-left: 10px;
   }
 
 }

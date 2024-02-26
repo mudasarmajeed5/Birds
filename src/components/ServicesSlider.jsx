@@ -1,7 +1,5 @@
 //  This is a Component that shows the services the agency in Providing in the form of Sliding Images with the content!
-import React, { useEffect, useState } from 'react'
 import "./ServicesSlider.css"
-import laptopImage from "../assets/ThirdPageImages/Laptop_Image.png"
 const ServicesSlider = () => {
   const handleClick = (e, slideId) => {
     e.preventDefault();
@@ -37,6 +35,7 @@ const ServicesSlider = () => {
                   <li>Web Blogging</li>
                   <li>Influencer Marketing</li>
                   <li>AR/ VR</li>
+                  <a href="#contact" className="px-2 py-1 rounded-sm bg-white text-blue-800">See More</a>
                 </ul>
               </div>
             </div>
@@ -55,6 +54,7 @@ const ServicesSlider = () => {
                   <li>Music and Sound</li>
                   <li>Production</li>
                   <li>Environmental Design</li>
+                  <a href="#contact" className="px-2 py-1 rounded-sm bg-white text-blue-800">See More</a>
                 </ul>
               </div>
             </div>
@@ -73,6 +73,7 @@ const ServicesSlider = () => {
                   <li>Digital Signage</li>
                   <li>Stadium and Arena Advertising</li>
                   <li>Tradeshow and Exhibition Displays</li>
+                  <a href="#contact" className="px-2 py-1 rounded-sm bg-white text-blue-800">See More</a>
                 </ul>
               </div>
             </div>
@@ -90,6 +91,7 @@ const ServicesSlider = () => {
                   <li>Full Video Production</li>
                   <li>Photography</li>
                   <li>Digital video commercial</li>
+                  <a href="#contact" className="px-2 py-1 rounded-sm bg-white text-blue-800">See More</a>
                 </ul>
               </div>
             </div>
@@ -107,6 +109,7 @@ const ServicesSlider = () => {
                   <li>Green Interior Design (Sustainable Design)</li>
                   <li>Smart Home Interior Design</li>
                   <li>Biophilic Interior Design</li>
+                  <a href="#contact" className="px-2 py-1 rounded-sm bg-white text-blue-800">See More</a>
                 </ul>
               </div>
             </div>
@@ -122,6 +125,7 @@ const ServicesSlider = () => {
                   <li>Stationary Printing and Designing</li>
                   <li>Product Designing 3D</li>
                   <li>3D Modelling and Developing</li>
+                  <a href="#contact" className="px-2 py-1 rounded-sm bg-white text-blue-800">See More</a>
                 </ul>
               </div>
             </div>
@@ -142,6 +146,7 @@ const ServicesSlider = () => {
                   <li>Weddings and Celebrations</li>
                   <li>Awards Shows</li>
                   <li>Product Launches</li>
+                  <a href="#contact" className="px-2 py-1 rounded-sm bg-white text-blue-800">See More</a>
                 </ul>
               </div>
             </div>
@@ -156,6 +161,7 @@ const ServicesSlider = () => {
                   <li>Print Media Management</li>
                   <li>Newspaper Management</li>
                   <li>Cinema</li>
+                  <a href="#contact" className="px-2 py-1 rounded-sm bg-white text-blue-800">See More</a>
                 </ul>
               </div>
             </div>
