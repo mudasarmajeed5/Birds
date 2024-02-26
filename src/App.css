@@ -1,4 +1,16 @@
+/* JQUERY ANIMATIONS HERE! */
+.creating_experiences,.digital_landscape,.card1,.card2,.card3{
+    opacity: 0;
+}
+.creating_experiences.animate__animated,.digital_landscape.animate__animated,.card1.animate__animated,.card2.animate_animated,.card3.animate__animated{
+    opacity: 1;
+}
+
+/* JQUERY ANIMATIONS HERE! */
+
+
 @keyframes slideFromBottom {
+
     0% {
         color: white;
         opacity: 0;
