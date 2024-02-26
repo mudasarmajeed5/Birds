@@ -112,11 +112,10 @@
   .contain,
   .sliderwrapper {
     height: 90vh;
-    width: auto;
   }
 
   .slides {
-    background-size: 40%;
+    background-size: 30%;
   }
 
   .slider-nav {
@@ -136,7 +135,10 @@
   .contain {
     padding: 2rem 0;
   }
-
+  .contunt{
+    left: 5px;
+    bottom: 40px;
+  }
   .contunt ul {
     padding: 10px;
   }
