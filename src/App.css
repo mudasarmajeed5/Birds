@@ -10,10 +10,16 @@
 
 /* BLOG HEADS */
 .head1,.head2,.head3,.head4,.head5{
-    opacity: 0;
-}
-.head1.animate__animated,.head2.animate__animated,.head3.animate__animated,.head4.animate__animated,.head5.animate__animated{
     opacity: 1;
+}
+@media only screen and (max-width:767px){
+    .head1,.head2,.head3,.head4,.head5{
+        opacity: 0;
+    }
+    .head1.animate__animated,.head2.animate__animated,.head3.animate__animated,.head4.animate__animated,.head5.animate__animated{
+        opacity: 1;
+    }
+
 }
 /* BLOG CONTENT */
 /* #blog1,#blog2,#blog3,#blog4,#blog5{

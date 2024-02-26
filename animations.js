@@ -2,6 +2,28 @@ $(document).ready(function () {
     let offset70 = { offset: "70%" }
     let offset50 = { offset: "50%" }
     let offset90 = { offset: "90%" }
+   
+    function isMobile() {
+        return $(window).width() <= 767;
+    }
+    if (isMobile()) {
+        $(".head1").waypoint(function () {
+            $(".head1").addClass("animate__animated animate__slideInDown");
+        }, offset90);
+        $(".head2").waypoint(function () {
+            $(".head2").addClass("animate__animated animate__slideInDown");
+        }, offset90);
+        $(".head3").waypoint(function () {
+            $(".head3").addClass("animate__animated animate__slideInDown");
+        }, offset90);
+        $(".head4").waypoint(function () {
+            $(".head4").addClass("animate__animated animate__slideInDown");
+        }, offset90);
+        $(".head5").waypoint(function () {
+            $(".head5").addClass("animate__animated animate__slideInDown");
+        }, offset90);
+    }
+
     $(".creating_experiences").waypoint(function () {
         $(".creating_experiences").addClass("animate__animated animate__fadeInDown");
     }, offset70);
@@ -24,26 +46,7 @@ $(document).ready(function () {
         $(".case_studies").addClass("animate__animated animate__fadeInLeft");
     }, offset70);
 
-    
     // Animation of Blog Page
-    
-    // First Changes Heads of of these
-    $(".head1").waypoint(function () {
-        $(".head1").addClass("animate__animated animate__slideInDown");
-    }, offset90);
-    $(".head2").waypoint(function () {
-        $(".head2").addClass("animate__animated animate__slideInDown");
-    }, offset90);
-    $(".head3").waypoint(function () {
-        $(".head3").addClass("animate__animated animate__slideInDown");
-    }, offset90);
-    $(".head4").waypoint(function () {
-        $(".head4").addClass("animate__animated animate__slideInDown");
-    }, offset90);
-    $(".head5").waypoint(function () {
-        $(".head5").addClass("animate__animated animate__slideInDown");
-    }, offset90);
-
     
     // Don't need for now, I will run it later!
 
