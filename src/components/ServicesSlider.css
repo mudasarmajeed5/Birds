@@ -6,35 +6,35 @@
 }
 
 .slide1 {
-  background-image: url("../assets/ThirdPageImages/Laptop_Image.png");
+  background-image: url("https://colorstudiomax.com/wp-content/uploads/2022/04/home14-chooseus-image.png");
 }
 
 .slide2 {
-  background-image: url("../assets/ThirdPageImages/Laptop_Image.png");
+  background-image: url("https://colorstudiomax.com/wp-content/uploads/2023/10/fpdl.in_person-walking-from-billboard-advertising-new-product-with-cityscape_982952-504_normal-1.jpg");
 }
 
 .slide3 {
-  background-image: url("../assets/ThirdPageImages/Laptop_Image.png");
+  background-image: url("https://colorstudiomax.com/wp-content/uploads/2023/10/fpdl.in_hand-drawn-flat-design-metaverse-illustration_52683-80293_normal.jpg");
 }
 
 .slide4 {
-  background-image: url("../assets/ThirdPageImages/Laptop_Image.png");
+  background-image: url("https://colorstudiomax.com/wp-content/uploads/2023/10/modern-apartment-with-comfortable-sofa-decor-generated-by-ai-1.jpg");
 }
 
 .slide5 {
-  background-image: url("../assets/ThirdPageImages/Laptop_Image.png");
+  background-image: url("https://colorstudiomax.com/wp-content/uploads/2023/10/fpdl.in_branding-concept-landing-page_52683-21189_normal-1.jpg");
 }
 
 .slide6 {
-  background-image: url("../assets/ThirdPageImages/Laptop_Image.png");
+  background-image: url("https://colorstudiomax.com/wp-content/uploads/2023/10/decorated-banquet-hall-with-served-round-table-with-hydrangea-centerpiece-chiavari-chairs-2.jpg");
 }
 
 .slide7 {
-  background-image: url("../assets/ThirdPageImages/Laptop_Image.png");
+  background-image: url("https://colorstudiomax.com/wp-content/uploads/2023/10/fpdl.in_marketing-team-work-huge-megaphone-with-media-icons-marketing-branding-billboard-ad-marketing-strategies-concept_335657-234_medium.jpg");
 }
 
 .slide8 {
-  background-image: url("../assets/ThirdPageImages/Laptop_Image.png");
+  background-image: url("https://colorstudiomax.com/wp-content/uploads/2023/10/2188970-2.jpg");
 }
 
 .slides {
@@ -68,10 +68,12 @@
 }
 
 .slider-nav {
+
+  padding: 1rem;
   display: flex;
   column-gap: 1rem;
   position: absolute;
-  bottom: 9rem;
+  bottom: 4rem;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
@@ -81,12 +83,13 @@
   width: 0.5rem;
   height: 0.5rem;
   border-radius: 50%;
-  background-color: #e78787;
+  background-color: #ffffff;
   opacity: 0.75;
   transition: opacity ease 250ms;
 }
 
 .slider-nav button:hover {
+  background-color: yellow;
   opacity: 1;
   width: 0.75rem;
   height: 0.75rem;
@@ -102,11 +105,6 @@
 }
 
 @media screen and (max-width:1000px) {
-
-  .slide1 {
-    background-image: url("../assets/ThirdPageImages/Vert.jpg");
-  }
-
   .contain {
     padding: 2rem 15vw;
   }

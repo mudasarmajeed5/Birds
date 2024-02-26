@@ -26,8 +26,8 @@ const Navbar = () => {
         <ul className={Toggle ? 'menu show' : 'menu'}>
           <li><a onClick={scrollToTop} className='smooth-underline-transition' href="#home">Home</a></li>
           <li><a className='smooth-underline-transition' href="#explore">Services</a></li>
-          <li><a className='smooth-underline-transition' href="#">About</a></li>
-          <li><a className='smooth-underline-transition' href="#">Blog</a></li>
+          <li><a className='smooth-underline-transition' href="#about">About</a></li>
+          <li><a className='smooth-underline-transition' href="#blog">Blogs</a></li>
           <li><a className='smooth-underline-transition' href="#contact">Contact</a></li>
         </ul>
       </nav>
@@ -60,9 +60,9 @@ const Navbar = () => {
         <nav className="md:ml-auto md:mr-auto flex-wrap items-center text-base justify-center hidden md:flex toggleNavColor">
           <a href='#home' onClick={scrollToTop} className="mr-5 smooth-underline-transition transition-all cursor-pointer">Home</a>
           <a href='#explore' className="mr-5 smooth-underline-transition transition-all cursor-pointer">Services</a>
-          <a className="mr-5 smooth-underline-transition transition-all cursor-pointer">About</a>
-          <a className="mr-5 smooth-underline-transition transition-all cursor-pointer">Blog</a>
-          <a className="mr-5 smooth-underline-transition transition-all cursor-pointer">Contact</a>
+          <a href='#about' className="mr-5 smooth-underline-transition transition-all cursor-pointer">About</a>
+          <a href='#blog' className="mr-5 smooth-underline-transition transition-all cursor-pointer">Blogs</a>
+          <a href='#contact' className="mr-5 smooth-underline-transition transition-all cursor-pointer">Contact</a>
         </nav>
         <div className="flex gap-1 md:gap-2 items-center">
 

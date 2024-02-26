@@ -1,14 +1,33 @@
 /* JQUERY ANIMATIONS HERE! */
-.creating_experiences,.digital_landscape,.card1,.card2,.card3{
+.creating_experiences,.digital_landscape,.card1,.card2,.card3,.ourwork,.case_studies{
     opacity: 0;
 }
-.creating_experiences.animate__animated,.digital_landscape.animate__animated,.card1.animate__animated,.card2.animate_animated,.card3.animate__animated{
+.creating_experiences.animate__animated,.digital_landscape.animate__animated,.card1.animate__animated,.card2.animate_animated,.card3.animate__animated,.ourwork.animate__animated,.case_studies.animate__animated{
     opacity: 1;
 }
 
+/*All 5 Blog article animations  */
+
+/* BLOG HEADS */
+.head1,.head2,.head3,.head4,.head5{
+    opacity: 0;
+}
+.head1.animate__animated,.head2.animate__animated,.head3.animate__animated,.head4.animate__animated,.head5.animate__animated{
+    opacity: 1;
+}
+/* BLOG CONTENT */
+/* #blog1,#blog2,#blog3,#blog4,#blog5{
+    opacity: 0;
+}
+#blog1.animate__animated,#blog2.animate__animated,#blog3.animate__animated,#blog4.animate__animated,#blog5.animate__animated{
+    opacity: 1;
+} */
 /* JQUERY ANIMATIONS HERE! */
 
-
+/* HTML Scroll Behaviour */
+html{
+    scroll-behavior: smooth;
+  }
 @keyframes slideFromBottom {
 
     0% {

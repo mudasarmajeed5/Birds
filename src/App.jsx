@@ -10,12 +10,16 @@ import ServicesSlider from './components/ServicesSlider';
 import './App.css'
 import "./Global.css"
 import Imgsrc from './bodyImage.png';
+// WhatsApp Icon!
+import { RiWhatsappFill } from "react-icons/ri";
+
 function App() {
 
   return (
     <>
+      <div className="fixed bottom-4 right-4 z-[10] text-5xl md:text-4xl text-green-400 hover:text-green-600"><a target="_blank" href="https://wa.link/ghsevf"><RiWhatsappFill /></a></div>
       <Navbar />
-      <div className="FirstPage relative">
+      <div id="home" className="FirstPage relative">
         <div className="img">
           <img className='absolute object-cover object-center top-0 z-[-1000]  h-[100%] w-full' src={Imgsrc} alt="" />
         </div>

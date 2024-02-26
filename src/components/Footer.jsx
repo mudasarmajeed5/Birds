@@ -20,28 +20,24 @@ const Footer = () => {
                         </svg>
                         <span className="ml-3 text-xl">AgencyColors</span>
                     </a>
-                    <p className="mt-2 text-xl text-gray-400">
+                    <p className="mt-2 text-xl text-gray-200">
                         We Define who you are.
                     </p>
                 </div>
                 <div className="flex-grow flex flex-wrap md:pr-20 -mb-10 md:text-left text-center order-first">
                     <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-                        <h2 className="title-font font-medium text-white tracking-widest text-lg mb-3">
-                            SocialMedias
+                        <h2 className="title-font font-medium text-black tracking-widest text-2xl mb-3">
+                            Location
                         </h2>
                         <nav className="list-none mb-10">
                             <li>
-                                <a href='#' className="text-gray-200 font-bold underline underline-offset-4">First Link</a>
+                                <a href='#' className="text-black font-bold text-lg underline-offset-4">Islamabad,PK</a>
                             </li>
                             <li>
-                                <a href='#' className="text-gray-200 font-bold underline underline-offset-4">Second Link</a>
+                                <a href='#' className="text-black font-bold text-lg underline-offset-4">+92 300 157 7735</a>
                             </li>
-                            <li>
-                                <a href='#' className="text-gray-200 font-bold underline underline-offset-4">Third Link</a>
-                            </li>
-                            <li>
-                                <a href='#' className="text-gray-200 font-bold underline underline-offset-4">Fourth Link</a>
-                            </li>
+                            
+                            <a className='text-blue-800 bg-white px-2 py-1 rounded-md' href="mailto:info@colorstudiomax.com">Tap to Email us</a>
                         </nav>
                     </div>
                     <div className="lg:w-1/4 md:w-1/2 w-full px-4">
@@ -50,16 +46,16 @@ const Footer = () => {
                         </h2>
                         <nav className="list-none mb-10">
                             <li>
-                                <a href='#' className="text-gray-200 font-bold underline underline-offset-4">First Link</a>
+                                <a href='#home' className="text-gray-200 font-bold hover:underline">Home</a>
                             </li>
                             <li>
-                                <a href='#' className="text-gray-200 font-bold underline underline-offset-4">Second Link</a>
+                                <a href='#contact' className="text-gray-200 font-bold hover:underline">Contact</a>
                             </li>
                             <li>
-                                <a href='#' className="text-gray-200 font-bold underline underline-offset-4">Third Link</a>
+                                <a href='#explore' className="text-gray-200 font-bold hover:underline">Services</a>
                             </li>
                             <li>
-                                <a href='#' className="text-gray-200 font-bold underline underline-offset-4">Fourth Link</a>
+                                <a href='#' className="text-gray-200 font-bold hover:underline">About</a>
                             </li>
                         </nav>
                     </div>
@@ -88,16 +84,13 @@ const Footer = () => {
                         </h2>
                         <nav className="list-none mb-10">
                             <li>
-                                <a href='#' className="text-gray-200 font-bold underline underline-offset-4">First Link</a>
+                                <a href='#about' className="text-gray-200 font-bold underline underline-offset-4">About Us</a>
                             </li>
                             <li>
-                                <a href='#' className="text-gray-200 font-bold underline underline-offset-4">Second Link</a>
+                                <a href='#contact' className="text-gray-200 font-bold underline underline-offset-4">Contact</a>
                             </li>
                             <li>
-                                <a href='#' className="text-gray-200 font-bold underline underline-offset-4">Third Link</a>
-                            </li>
-                            <li>
-                                <a href='#' className="text-gray-200 font-bold underline underline-offset-4">Fourth Link</a>
+                                <a href='#explore' className="text-gray-200 font-bold underline underline-offset-4">Services</a>
                             </li>
                         </nav>
                     </div>
@@ -106,15 +99,16 @@ const Footer = () => {
             <div className="bg-[#070F2B]">
                 <div className="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
                     <p className="text-gray-300 text-md text-center sm:text-left">
-                        © 2024 AgencyColors —
+                        <div className='flex items-center gap-2'><span className="text-3xl">&copy;</span>Copyright<span className='text-white'>2024 All rights Reserved &nbsp; —</span>
                         <a
-                            href="https://twitter.com/knyttneve"
+                            href="https://colors-agency.vercel.app/"
                             rel="noopener noreferrer"
                             className="text-white ml-1"
                             target="_blank"
                         >
-                            ColorStudioMax
-                        </a>
+                            ColorsAgency
+                        </a></div>
+                        
                     </p>
                     <span className="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
                         <a className="text-gray-300 hover:bg-blue-500 p-2 hover:cursor-pointer transition-all rounded-md">
