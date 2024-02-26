@@ -30,8 +30,8 @@
     background-color: var(--background-color);
     color: var(--text-color);
     border-radius: 0px;
-    border-right: 2px solid gray;
-    border-bottom: 2px solid gray;
+    border-bottom: 2px solid #04e4ff;
+    border-top: 2px solid #04e4ff;
     padding: 0px 20px;
 }
 .card>.seeDetails{
@@ -39,10 +39,10 @@
     font-family: 'Poppins',sans-serif;
 }
 .border-left{
-    border-left: 2px solid;
-    border-right: none;
-    border-top: 2px solid gray;
+    border-top: none;
     border-bottom: none;
+    border-left: 2px solid #04e4ff;
+    border-right: 2px solid #04e4ff;
 }
 .card{
     transition: all 150ms ease-in;

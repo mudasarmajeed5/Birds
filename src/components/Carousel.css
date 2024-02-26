@@ -51,4 +51,8 @@
     .logos::before,.logos::after{
         width: 30vw;
     }
+    .logos{
+        padding: 30px 0px;
+    }
+
 }
